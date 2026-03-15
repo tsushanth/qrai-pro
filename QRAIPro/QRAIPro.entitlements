@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>com.apple.developer.in-app-payments</key>
+	<array>
+		<string>com.appfactory.qraipro.premium.weekly</string>
+		<string>com.appfactory.qraipro.premium.monthly</string>
+		<string>com.appfactory.qraipro.premium.yearly</string>
+		<string>com.appfactory.qraipro.premium.lifetime</string>
+	</array>
+	<key>com.apple.security.application-groups</key>
+	<array>
+		<string>group.com.appfactory.qraipro</string>
+	</array>
+	<key>aps-environment</key>
+	<string>development</string>
+</dict>
+</plist>
