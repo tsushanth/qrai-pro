@@ -8,6 +8,8 @@
 	<string>QRAI Pro</string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
+	<key>CFBundleIconName</key>
+	<string>AppIcon</string>
 	<key>CFBundleIdentifier</key>
 	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
 	<key>CFBundleInfoDictionaryVersion</key>
@@ -18,18 +20,33 @@
 	<string>$(PRODUCT_BUNDLE_PACKAGE_TYPE)</string>
 	<key>CFBundleShortVersionString</key>
 	<string>$(MARKETING_VERSION)</string>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleURLName</key>
+			<string>com.appfactory.qraipro</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>qraipro</string>
+			</array>
+		</dict>
+	</array>
 	<key>CFBundleVersion</key>
 	<string>$(CURRENT_PROJECT_VERSION)</string>
+	<key>ITSAppUsesNonExemptEncryption</key>
+	<false/>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>MinimumOSVersion</key>
+	<string>17.0</string>
 	<key>NSCameraUsageDescription</key>
 	<string>QRAI Pro needs camera access to scan QR codes and barcodes.</string>
-	<key>NSPhotoLibraryUsageDescription</key>
-	<string>QRAI Pro needs photo library access to scan QR codes from your photos.</string>
-	<key>NSPhotoLibraryAddUsageDescription</key>
-	<string>QRAI Pro needs permission to save QR codes to your photo library.</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>QRAI Pro can use your location to create location-based QR codes.</string>
+	<key>NSPhotoLibraryAddUsageDescription</key>
+	<string>QRAI Pro needs permission to save QR codes to your photo library.</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>QRAI Pro needs photo library access to scan QR codes from your photos.</string>
 	<key>NSUserTrackingUsageDescription</key>
 	<string>This helps us provide personalized content and measure app performance.</string>
 	<key>UIApplicationSceneManifest</key>
@@ -51,11 +68,13 @@
 	</dict>
 	<key>UILaunchScreen</key>
 	<dict>
-		<key>UIImageName</key>
-		<string>LaunchScreen</string>
 		<key>UIColorName</key>
 		<string>AccentColor</string>
+		<key>UIImageName</key>
+		<string>LaunchScreen</string>
 	</dict>
+	<key>UIRequiresFullScreen</key>
+	<false/>
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
@@ -69,22 +88,5 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
-	<key>CFBundleURLTypes</key>
-	<array>
-		<dict>
-			<key>CFBundleURLName</key>
-			<string>com.appfactory.qraipro</string>
-			<key>CFBundleURLSchemes</key>
-			<array>
-				<string>qraipro</string>
-			</array>
-		</dict>
-	</array>
-	<key>ITSAppUsesNonExemptEncryption</key>
-	<false/>
-	<key>UIRequiresFullScreen</key>
-	<false/>
-	<key>MinimumOSVersion</key>
-	<string>17.0</string>
 </dict>
 </plist>
